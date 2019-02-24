@@ -2,7 +2,7 @@ add this to your composer.json
 
 
 "extra": {
-  "patches-file": "composer.php72.json",
+  "patches-file": "vendor/loewenstark/magento-22-php72/composer.php72.json",
   "enable-patching": true
 }
 
