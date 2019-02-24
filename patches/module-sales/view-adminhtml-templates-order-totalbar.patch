@@ -1,0 +1,13 @@
+--- a/view/adminhtml/templates/order/totalbar.phtml	2018-11-19 11:55:58.000000000 +0100
++++ b/view/adminhtml/templates/order/totalbar.phtml	2019-02-24 20:32:30.682810076 +0100
+@@ -7,8 +7,9 @@
+ // @deprecated
+ // @codingStandardsIgnoreFile
+ 
++$totals = $block->getTotals();
+ ?>
+-<?php if (sizeof($block->getTotals()) > 0): ?>
++<?php if ($totals && count($totals) > 0): ?>
+ <table class="items-to-invoice">
+     <tr>
+     <?php foreach ($block->getTotals() as $_total): ?>
