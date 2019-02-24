@@ -35,7 +35,7 @@
         "magento/module-theme": {
             "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-theme/block-html-topmenu.patch"
         },
-        "module-sales": {
+        "magento/module-sales": {
             "Fixed PHP7.2 sizeof function": "vendor/loewenstark/magento-22-php72/patches/module-sales/view-adminhtml-templates-order-totalbar.patch"
         }
     }
