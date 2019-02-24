@@ -1,0 +1,20 @@
+--- a/Block/Menu.php	2018-11-19 11:53:14.000000000 +0100
++++ b/Block/Menu.php	2019-02-24 02:34:58.750659545 +0100
+@@ -387,7 +387,7 @@
+             $itemName = substr($menuId, strrpos($menuId, '::') + 2);
+             $itemClass = str_replace('_', '-', strtolower($itemName));
+ 
+-            if (count($colBrakes) && $colBrakes[$itemPosition]['colbrake'] && $itemPosition != 1) {
++            if ($colBrakes && count($colBrakes) && $colBrakes[$itemPosition]['colbrake'] && $itemPosition != 1) {
+                 $output .= '</ul></li><li class="column"><ul role="menu">';
+             }
+ 
+@@ -401,7 +401,7 @@
+             $itemPosition++;
+         }
+ 
+-        if (count($colBrakes) && $limit) {
++        if ($colBrakes && count($colBrakes) && $limit) {
+             $output = '<li class="column"><ul role="menu">' . $output . '</ul></li>';
+         }
+ 

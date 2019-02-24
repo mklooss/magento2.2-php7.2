@@ -1,0 +1,11 @@
+--- a/Observer/AddToCart.php	2019-02-24 02:38:58.046808500 +0100
++++ b/Observer/AddToCart.php	2019-02-24 02:39:13.454050644 +0100
+@@ -76,7 +76,7 @@
+             $wishlistIds = [$singleWishlistId];
+         }
+ 
+-        if (count($wishlistIds) && $request->getParam('wishlist_next')) {
++        if ($wishlistIds && count($wishlistIds) && $request->getParam('wishlist_next')) {
+             $wishlistId = array_shift($wishlistIds);
+ 
+             if ($this->customerSession->isLoggedIn()) {

@@ -1,0 +1,11 @@
+--- a/Model/Config/Source/Country/Full.php	2018-11-19 12:01:42.000000000 +0100
++++ b/Model/Config/Source/Country/Full.php	2019-02-23 23:39:50.684775245 +0100
+@@ -19,7 +19,7 @@
+      * @param bool $isMultiselect
+      * @return array
+      */
+-    public function toOptionArray($isMultiselect = false)
++    public function toOptionArray($isMultiselect = false, $foregroundCountries = '')
+     {
+         return parent::toOptionArray(true);
+     }

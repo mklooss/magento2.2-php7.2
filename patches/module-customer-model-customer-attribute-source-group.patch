@@ -1,0 +1,11 @@
+--- a/Model/Customer/Attribute/Source/Group.php	2018-11-19 12:01:14.000000000 +0100
++++ b/Model/Customer/Attribute/Source/Group.php	2019-02-24 01:24:16.992897296 +0100
+@@ -44,7 +44,7 @@
+     /**
+      * @return array
+      */
+-    public function getAllOptions()
++    public function getAllOptions($withEmpty = true, $defaultValues = false)
+     {
+         if (!$this->_options) {
+             $groups = $this->_groupManagement->getLoggedInGroups();

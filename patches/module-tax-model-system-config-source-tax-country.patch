@@ -1,0 +1,11 @@
+--- a/Model/System/Config/Source/Tax/Country.php	2019-02-24 01:36:23.355834200 +0100
++++ b/Model/System/Config/Source/Tax/Country.php	2019-02-24 01:37:06.375190279 +0100
+@@ -16,7 +16,7 @@
+      * @param bool $noEmpty
+      * @return array
+      */
+-    public function toOptionArray($noEmpty = false)
++    public function toOptionArray($noEmpty = false, $country = null)
+     {
+         $options = parent::toOptionArray($noEmpty);
+ 

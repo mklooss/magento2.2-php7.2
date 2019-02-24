@@ -1,0 +1,37 @@
+"patches": {
+   "magento/magento2-base": {
+        "Fixed PHP7.2 Checks / mcrypt Check": "vendor/loewenstark/magento-22-php72/patches/magento2-base-patch-PhpReadinessCheck.patch"
+    }
+    ,"magento/framework": {
+        "Fixed PHP7.2 ini_set session": "vendor/loewenstark/magento-22-php72/patches/framework-session-sessionmanager.patch"
+    },
+    "magento/module-directory": {
+        "Fixed PHP7.2 Declaration": "vendor/loewenstark/magento-22-php72/patches/module-directory-model-config-source-country-full.patch"
+    },
+    "magento/module-customer": {
+        "Fixed PHP7.2 Declaration in SrcAttr Groups": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-customer-attribute-source-group.patch",
+        "Fixed PHP7.2 Declaration in SrcAttr Store": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-customer-attribute-source-store.patch",
+        "Fixed PHP7.2 Declaration in SrcAttr Website": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-customer-attribute-source-website.patch",
+        "Fixed PHP7.2 Declaration in ResSrcAttr CountryWithWebsites": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-resourcemodel-address-attribute-source-countrywithwebsites.patch",
+        "Fixed PHP7.2 Declaration in ResSrcAttr Country": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-resourcemodel-address-attribute-source-country.patch",
+        "Fixed PHP7.2 Declaration in ResSrcAttr Region": "vendor/loewenstark/magento-22-php72/patches/module-customer-model-resourcemodel-address-attribute-source-region.patch"
+    },
+    "magento/module-eav": {
+        "Fixed PHP7.2 Declaration in Store": "vendor/loewenstark/magento-22-php72/patches/module-eav-model-entity-attribute-source-store.patch"
+    },
+    "magento/module-tax": {
+        "Fixed PHP7.2 Declaration in Country": "vendor/loewenstark/magento-22-php72/patches/module-tax-model-system-config-source-tax-country.patch"
+    },
+    "magento/zendframework1": {
+        "Fixed PHP7.2 each function": "vendor/loewenstark/magento-22-php72/patches/zendframework1-library-zend_cache_backend.patch"
+    },
+    "magento/module-backend": {
+        "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-backend-block-menu.patch"
+    },
+    "magento/module-wishlist": {
+        "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-wishlist-observer-addtocart.patch"
+    },
+    "magento/module-theme": {
+        "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-theme-block-html-topmenu.patch"
+    }
+}

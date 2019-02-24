@@ -1,0 +1,11 @@
+--- a/Model/Customer/Attribute/Source/Store.php	2018-11-19 12:01:14.000000000 +0100
++++ b/Model/Customer/Attribute/Source/Store.php	2019-02-24 01:24:14.282211738 +0100
+@@ -42,7 +42,7 @@
+     /**
+      * @return array
+      */
+-    public function getAllOptions()
++    public function getAllOptions($withEmpty = true, $defaultValues = false)
+     {
+         if (!$this->_options) {
+             $collection = $this->_createStoresCollection();

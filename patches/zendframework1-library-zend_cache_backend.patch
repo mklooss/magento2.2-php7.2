@@ -1,0 +1,11 @@
+--- a/library/Zend/Cache/Backend.php	2017-06-21 16:56:23.000000000 +0200
++++ b/library/Zend/Cache/Backend.php	2019-02-24 02:27:48.421054479 +0100
+@@ -76,7 +76,7 @@
+     public function setDirectives($directives)
+     {
+         if (!is_array($directives)) Zend_Cache::throwException('Directives parameter must be an array');
+-        while (list($name, $value) = each($directives)) {
++        foreach ($directives as $name => $value) {
+             if (!is_string($name)) {
+                 Zend_Cache::throwException("Incorrect option name : $name");
+             }

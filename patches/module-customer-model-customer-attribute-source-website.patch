@@ -1,0 +1,11 @@
+--- a/Model/Customer/Attribute/Source/Website.php	2018-11-19 12:01:14.000000000 +0100
++++ b/Model/Customer/Attribute/Source/Website.php	2019-02-24 01:24:20.011018100 +0100
+@@ -34,7 +34,7 @@
+     /**
+      * @return array
+      */
+-    public function getAllOptions()
++    public function getAllOptions($withEmpty = true, $defaultValues = false)
+     {
+         if (!$this->_options) {
+             $this->_options = $this->_store->getWebsiteValuesForForm();

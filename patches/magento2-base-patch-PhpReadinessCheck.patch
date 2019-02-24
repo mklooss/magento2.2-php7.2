@@ -1,0 +1,24 @@
+--- a/setup/src/Magento/Setup/Model/PhpReadinessCheck.php	2019-02-23 23:30:31.424038000 +0100
++++ b/setup/src/Magento/Setup/Model/PhpReadinessCheck.php	2019-02-23 23:30:50.399322868 +0100
+@@ -75,6 +75,10 @@
+                 ],
+             ];
+         }
++        if (!strstr($requiredVersion, '7.2.0'))
++        {
++            $requiredVersion = trim($requiredVersion."|~7.2.0");
++        }
+         $multipleConstraints = $this->versionParser->parseConstraints($requiredVersion);
+         $normalizedPhpVersion = $this->getNormalizedCurrentPhpVersion(PHP_VERSION);
+         $currentPhpVersion = $this->versionParser->parseConstraints($normalizedPhpVersion);
+@@ -163,6 +167,10 @@
+                 ],
+             ];
+         }
++        if (!in_array('mcrypt', $current) && defined('MCRYPT_MODE_ECB'))
++        {
++            $current[] = 'mcrypt';
++        }
+         $responseType = ResponseTypeInterface::RESPONSE_TYPE_SUCCESS;
+         $missing = array_values(array_diff($required, $current));
+         if ($missing) {

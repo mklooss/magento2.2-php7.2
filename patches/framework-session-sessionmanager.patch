@@ -1,0 +1,13 @@
+--- a/framework/Session/SessionManager.php	2018-11-19 11:58:50.000000000 +0100
++++ b/framework/Session/SessionManager.php	2019-02-24 01:54:48.906336229 +0100
+@@ -126,7 +126,9 @@
+         $this->appState = $appState;
+ 
+         // Enable session.use_only_cookies
+-        ini_set('session.use_only_cookies', '1');
++        if (!$this->isSessionExists()) {
++            ini_set('session.use_only_cookies', '1');
++        }
+         $this->start();
+     }
+ 

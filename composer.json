@@ -1,0 +1,22 @@
+{
+    "name": "loewenstark/magento-22-php72",
+    "description": "Patches for Magento 2.2.x",
+    "version": "2.2.7"
+    "require": {
+        "php": "~7.0.0|~7.1.0|~7.2.0",
+        "cweagans/composer-patches": "~1.0"
+    },
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Mathis Klooss",
+            "email": "mathis@mage-profis.de"
+        }
+    ],
+    "extra": {
+        "map": [
+            "composer.php72.json", "composer.php72.json"
+        ]
+    }
+}

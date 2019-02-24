@@ -1,0 +1,11 @@
+--- a/Model/ResourceModel/Address/Attribute/Source/CountryWithWebsites.php	2018-11-19 12:01:14.000000000 +0100
++++ b/Model/ResourceModel/Address/Attribute/Source/CountryWithWebsites.php	2019-02-24 01:39:49.657565214 +0100
+@@ -71,7 +71,7 @@
+      *
+      * @return array
+      */
+-    public function getAllOptions()
++    public function getAllOptions($withEmpty = true, $defaultValues = false)
+     {
+         if (!$this->options) {
+             $allowedCountries = [];
