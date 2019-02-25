@@ -6,12 +6,20 @@
         "cweagans/composer-patches": "~1.0",
         "phpseclib/mcrypt_compat": "~1.0"
     },
-    "type": "magento2-module",
+    "type": "magento2-component",
     "license": "OSL-3.0",
     "authors": [
         {
             "name": "Mathis Klooss",
             "email": "mathis@mage-profis.de"
         }
-    ]
+    ],
+    "extra": {
+        "map": [
+            [
+                "composer.php72.json",
+                "composer.php72.json"
+            ]
+        ]
+    }
 }
