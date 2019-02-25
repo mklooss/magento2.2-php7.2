@@ -13,10 +13,5 @@
             "name": "Mathis Klooss",
             "email": "mathis@mage-profis.de"
         }
-    ],
-    "extra": {
-        "map": [
-            "composer.php72.json", "composer.php72.json"
-        ]
-    }
+    ]
 }
