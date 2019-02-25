@@ -29,6 +29,26 @@ Modify your composer.json with the lines.
 you should also add the deployed "composer.php72.json" to your git Project Repository.
 Modify your .gitignore with "!/composer.php72.json" to add this file to your Project.
 
+To Fix "each function" in "colinmollenhour/cache-backend-file"
+you have to install an other version
+
+```
+~# composer require colinmollenhour/cache-backend-file "v1.4.4 as v1.4"
+```
+
+To Avoid Issues with wrong PHP Version and missing MCrypt you can add this also to your composer.json
+
+```
+{
+    "config": {
+        "platform": {
+            "php": "7.1.0",
+            "ext-mcrypt": "1.0.0"
+        }
+    }
+}
+```
+
 Support
 -------
 If you have any issues with this extension, open an issue on [GitHub](https://github.com/mklooss/magento2.2-php7.2/issues).
