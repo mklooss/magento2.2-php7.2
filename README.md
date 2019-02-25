@@ -19,9 +19,9 @@ Modify your composer.json with the lines.
 ```
 {
     "extra": {
-        "enable-patching": true
+        "enable-patching": true,
         "composer-exit-on-patch-failure": false,
-        "patches-file": "composer.php72.json",
+        "patches-file": "composer.php72.json"
     }
 }
 ```
