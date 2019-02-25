@@ -15,6 +15,17 @@ Installation Instructions
 ~# composer require loewenstark/magento-22-php72
 ```
 
+Modify your composer.json with the lines.
+```
+{
+    "extra": {
+        "enable-patching": true
+        "composer-exit-on-patch-failure": false,
+        "patches-file": "composer.php72.json",
+    }
+}
+```
+
 you should also add the deployed "composer.php72.json" to your git Project Repository.
 Modify your .gitignore with "!/composer.php72.json" to add this file to your Project.
 
