@@ -1,0 +1,12 @@
+--- a/setup/src/Magento/Setup/Module/I18n/Pack/Generator.php	2019-02-27 22:44:35.400304546 +0100
++++ b/setup/src/Magento/Setup/Module/I18n/Pack/Generator.php	2019-02-27 22:47:48.100235517 +0100
+@@ -71,7 +71,8 @@
+         $locale = $this->factory->createLocale($locale);
+         $dictionary = $this->dictionaryLoader->load($dictionaryPath);
+ 
+-        if (!count($dictionary->getPhrases())) {
++        $phrases = $dictionary->getPhrases();
++        if (!is_array($phrases) || !count($phrases)) {
+             throw new \UnexpectedValueException('No phrases have been found by the specified path.');
+         }
+ 

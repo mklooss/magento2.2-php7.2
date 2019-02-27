@@ -1,7 +1,8 @@
-{
+^^{
     "patches": {
        "magento/magento2-base": {
-            "Fixed PHP7.2 Checks / mcrypt Check": "vendor/loewenstark/magento-22-php72/patches/magento2-base/magento-setup-model-phpreadinesscheck.patch"
+            "Fixed PHP7.2 Checks / mcrypt Check": "vendor/loewenstark/magento-22-php72/patches/magento2-base/magento-setup-model-phpreadinesscheck.patch",
+            "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/magento2-base/magento-setup-module-i18n-pack-generator.patch"
         }
         ,"magento/framework": {
             "Fixed PHP7.2 ini_set session": "vendor/loewenstark/magento-22-php72/patches/framework/session-sessionmanager.patch"
