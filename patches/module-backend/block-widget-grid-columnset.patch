@@ -1,0 +1,12 @@
+--- a/Block/Widget/Grid/ColumnSet.php	2019-02-28 20:34:08.629464487 +0100
++++ b/Block/Widget/Grid/ColumnSet.php	2019-02-28 20:34:13.673858466 +0100
+@@ -258,7 +258,8 @@
+      */
+     public function getMultipleRows($item)
+     {
+-        return $item->getChildren();
++        $children = $item->getChildren();
++        return $children ?: [];
+     }
+ 
+     /**

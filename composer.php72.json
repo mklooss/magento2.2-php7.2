@@ -1,4 +1,4 @@
-^^{
+{
     "patches": {
        "magento/magento2-base": {
             "Fixed PHP7.2 Checks / mcrypt Check": "vendor/loewenstark/magento-22-php72/patches/magento2-base/magento-setup-model-phpreadinesscheck.patch",
@@ -28,7 +28,8 @@
             "Fixed PHP7.2 each function": "vendor/loewenstark/magento-22-php72/patches/zendframework1/library-zend_cache_backend.patch"
         },
         "magento/module-backend": {
-            "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-backend/block-menu.patch"
+            "Fixed PHP7.2 count function block menu": "vendor/loewenstark/magento-22-php72/patches/module-backend/block-menu.patch",
+            "Fixed PHP7.2 count function block widget grid columnset": "vendor/loewenstark/magento-22-php72/patches/module-backend/block-widget-grid-columnset.patch"
         },
         "magento/module-wishlist": {
             "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-wishlist/observer-addtocart.patch"
@@ -38,6 +39,9 @@
         },
         "magento/module-sales": {
             "Fixed PHP7.2 sizeof function": "vendor/loewenstark/magento-22-php72/patches/module-sales/view-adminhtml-templates-order-totalbar.patch"
+        },
+        "magento/module-bundle": {
+            "Fixed PHP7.2 count function": "vendor/loewenstark/magento-22-php72/patches/module-bundle/model-product-type.patch"
         }
     }
 }
